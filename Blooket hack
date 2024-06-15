@@ -6,8 +6,11 @@
 // @author       Your Name
 // @match        *://*.blooket.com/*
 // @icon         https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fz5x1s5ytcft81.png
+// @updateURL    https://raw.githubusercontent.com/WMPinfo/WMPinfo/main/Blooket%20hack
+// @downloadURL  https://raw.githubusercontent.com/WMPinfo/WMPinfo/main/Blooket%20hack
 // @grant        none
 // ==/UserScript==
+
 
 
 (function() {
