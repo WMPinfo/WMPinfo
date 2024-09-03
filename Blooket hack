@@ -1,30 +1,76 @@
 // ==UserScript==
-// @name         Blooket Enhancer
+// @name         Blooket Enhancer GUI
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.5
 // @description  Enhances the Blooket experience with additional features and improvements.
+// @description:de  Verbessert das Blooket-Erlebnis durch zusätzliche Funktionen und Verbesserungen.
+// @description:ru  Расширяет возможности Blooket за счет дополнительных функций и улучшений.
+// @description:es  Mejora la experiencia de Blooket con funciones adicionales y mejoras.
+// @description:fr  Améliore l'expérience Blooket avec des fonctionnalités supplémentaires et des améliorations.
+// @description:nl  Verbetert de Blooket-ervaring met extra functies en verbeteringen.
+// @description:it  Migliora l'esperienza Blooket con funzionalità aggiuntive e miglioramenti.
+// @description:ja  追加機能と改善によりBlooketの体験を向上させます。
+// @description:ko  추가 기능 및 개선을 통해 Blooket 경험을 향상시킵니다。
+// @description:zh  通过额外功能和改进提升Blooket体验。
+// @description:pt  Melhora a experiência do Blooket com funcionalidades adicionais e melhorias.
+// @description:tr  Blooket deneyimini ek özellikler ve iyileştirmelerle geliştirir.
+// @description:ar  يعزز تجربة Blooket من خلال ميزات إضافية وتحسينات.
+// @description:hi  Blooket अनुभव को अतिरिक्त सुविधाओं और सुधारों के साथ बढ़ाता है。
+// @description:sv  Förbättrar Blooket-upplevelsen med ytterligare funktioner och förbättringar。
+// @description:no  Forbedrer Blooket-opplevelsen med ekstra funksjoner og forbedringer。
+// @description:fi  Parantaa Blooket-kokemusta lisäominaisuuksilla ja parannuksilla。
+// @description:pl  Ulepsza doświadczenie Blooket dzięki dodatkowym funkcjom i ulepszeniom。
+// @description:vi  Nâng cao trải nghiệm Blooket với các tính năng và cải tiến bổ sung。
+// @description:th  ปรับปรุงประสบการณ์ Blooket ด้วยคุณสมบัติเพิ่มเติมและการปรับปรุง。
+// @description:cs  Vylepšuje zážitek z Blooketu pomocí dalších funkcí a vylepšení。
+// @description:da  Forbedrer Blooket-oplevelsen med ekstra funktioner og forbedringer.
+// @description:el  Βελτιώνει την εμπειρία του Blooket με πρόσθετες λειτουργίες και βελτιώσεις.
+// @description:hu  Javítja a Blooket élményt további funkciókkal és fejlesztésekkel.
+// @description:ro  Îmbunătățește experiența Blooket cu funcții suplimentare și îmbunătățiri.
+// @description:sk  Zlepšuje zážitok z Blooketu s ďalšími funkciami a vylepšeniami.
+// @description:sl  Izboljša izkušnjo Blooket z dodatnimi funkcijami in izboljšavami.
+// @description:uk  Покращує досвід Blooket завдяки додатковим функціям та вдосконаленням.
 // @author       CTR
 // @license      MIT
+// @tag          Hacks
+// @tag          Blooket
+// @tag          Games
+// @tag          Enhancements
+// @tag          Productivity
+// @include      *://*.blooket.com/*
 // @match        *://*.blooket.com/*
-// @compatible    firefox Violentmonkey
-// @compatible    firefox Tampermonkey
-// @compatible    firefox FireMonkey
-// @compatible    chrome Violentmonkey
-// @compatible    chrome Tampermonkey
-// @compatible    opera Violentmonkey
-// @compatible    opera Tampermonkey
-// @compatible    opera gx Violentmonkey
-// @compatible    opera Tampermonkey
-// @compatible    safari Stay
-// @compatible    edge Violentmonkey
-// @compatible    edge Tampermonkey
-// @compatible    brave Violentmonkey
-// @compatible    brave Tampermonkey
-// @icon         https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fz5x1s5ytcft81.png
+// @compatible   firefox Violentmonkey
+// @compatible   firefox Tampermonkey
+// @compatible   firefox FireMonkey
+// @compatible   chrome Violentmonkey
+// @compatible   chrome Tampermonkey
+// @compatible   chrome ScriptSafe
+// @compatible   opera Violentmonkey
+// @compatible   opera Tampermonkey
+// @compatible   opera gx Violentmonkey
+// @compatible   opera gx Tampermonkey
+// @compatible   safari Stay
+// @compatible   safari Greasemonkey
+// @compatible   edge Violentmonkey
+// @compatible   edge Tampermonkey
+// @compatible   edge Greasemonkey
+// @compatible   brave Violentmonkey
+// @compatible   brave Tampermonkey
+// @compatible   vivaldi Violentmonkey
+// @compatible   vivaldi Tampermonkey
+// @compatible   yandex Violentmonkey
+// @compatible   yandex Tampermonkey
+// @compatible   firefox-developer-edition Violentmonkey
+// @compatible   firefox-developer-edition Tampermonkey
+// @compatible   firefox-nightly Violentmonkey
+// @compatible   firefox-nightly Tampermonkey
+// @compatible   android Firefox
+// @compatible   android Kiwi
+// @icon         https://static.wikia.nocookie.net/blooket/images/0/05/Token.webp/revision/latest?cb=20240227053717
 // @grant        none
-// @icon         https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fz5x1s5ytcft81.png
-// @updateURL    https://raw.githubusercontent.com/WMPinfo/WMPinfo/main/Blooket%20hack
-// @downloadURL  https://raw.githubusercontent.com/WMPinfo/WMPinfo/main/Blooket%20hack
+// @supportURL   https://discord.gg/5ncXYMPFSD
+// @downloadURL https://update.greasyfork.org/scripts/506368/Blooket%20Enhancer%20GUI.user.js
+// @updateURL https://update.greasyfork.org/scripts/506368/Blooket%20Enhancer%20GUI.meta.js
 // ==/UserScript==
 
 
@@ -206,7 +252,7 @@
                 userSelect: "text"
             },
             innerHTML: "GitHub - CTR",
-            onclick: () => window.open("https://github.com/CTR/BLOOKET", "_blank").focus()
+            onclick: () => window.open("https://github.com/WMPinfo/WMPinfo/blob/main/Blooket%20hack", "_blank").focus()
         }), $ = l("div", {
             id: "controlButtons",
             style: {
@@ -300,7 +346,7 @@
                 display: "flex",
                 flexDirection: "column"
             },
-            innerHTML: '<span style="text-shadow: 1px 1px rgb(0 0 0 / 40%); font-size: 0.8em;">Cheats<sup>v14.0</sup></span>'
+            innerHTML: '<span style="text-shadow: 1px 1px rgb(0 0 0 / 40%); font-size: 0.8em;">Cheats<sup>v1.4</sup></span>'
         }, l("a", {
             className: "bigButton",
             style: {
@@ -6022,5 +6068,5 @@
                 C.alerts?.[0].addLog("Blooket Anti-Cheat Blocked!")
             }
         } else console.log("already run")
-    })(); // Your code here...
+    })();
 })();
